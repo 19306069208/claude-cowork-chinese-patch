@@ -1,0 +1,9 @@
+# Changelog
+
+## 0.1.0
+
+- 初始开源版本。
+- 支持 WindowsApps 版 Claude Desktop / Cowork。
+- 提供中文翻译表。
+- 提供安装、恢复、ASAR 注入和完整性哈希修正脚本。
+- 覆盖 Cowork 首页、计划任务、自定义、设置、协作设置等常见界面文案。
