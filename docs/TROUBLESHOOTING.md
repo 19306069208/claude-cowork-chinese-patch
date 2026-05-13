@@ -41,3 +41,13 @@ powershell -ExecutionPolicy Bypass -File .\scripts\restore.ps1
 ```
 
 恢复脚本会使用 `%USERPROFILE%\.claude-cowork-zh-patch\latest.json` 指向的最近一次备份。
+
+## 安装教程在哪里
+
+完整流程见：
+
+```text
+docs/USAGE.md
+```
+
+如果你是第一次使用，建议先从教程按顺序执行，不要直接改脚本。

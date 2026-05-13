@@ -6,6 +6,19 @@
 
 > 非官方项目。使用前请确认你理解它会修改本机 Claude Desktop 的安装文件。
 
+## 快速开始
+
+```powershell
+git clone https://github.com/19306069208/claude-cowork-zh-patch.git
+cd claude-cowork-zh-patch
+npm install
+powershell -ExecutionPolicy Bypass -File .\scripts\install.ps1
+```
+
+弹出 UAC 时选择允许。安装完成后 Claude 会自动重新启动。
+
+完整步骤请看：[详细使用教程](docs/USAGE.md)。
+
 ## 功能
 
 - 将 Cowork 首页、侧边栏、任务入口、项目入口等常见文案改为中文。
@@ -36,6 +49,7 @@
 ├── docs/
 │   ├── ARCHITECTURE.md             # 工作原理
 │   ├── FEATURES.md                 # 汉化范围
+│   ├── USAGE.md                    # 详细使用教程
 │   └── TROUBLESHOOTING.md          # 常见问题
 └── README.md
 ```
@@ -70,6 +84,7 @@ C:\Program Files\WindowsApps\Claude_*__pzs8sxrjxfjjc\app
 - Node.js 18+
 - PowerShell
 - 管理员权限
+- 已安装 Claude Desktop / Cowork
 
 执行：
 
@@ -79,6 +94,12 @@ powershell -ExecutionPolicy Bypass -File .\scripts\install.ps1
 ```
 
 脚本会尝试自动提权。弹出 UAC 时选择允许。
+
+安装后可检查：
+
+- Cowork 首页是否显示“协作”“新建任务”“项目”“计划任务”“自定义”。
+- 首页标题是否显示“一起完成你的待办事项”。
+- 设置页中常见英文是否已替换为中文。
 
 ## 恢复
 
@@ -117,6 +138,14 @@ npm run validate
 - Claude 自动更新后，WindowsApps 目录会变成新版本，需要重新运行补丁。
 - Cowork 部分页面由远端动态下发，新增英文文案需要继续补充 `translations/zh-CN.json`。
 - 该补丁不是 Anthropic 官方功能。
+
+## 文档
+
+- [详细使用教程](docs/USAGE.md)
+- [汉化范围](docs/FEATURES.md)
+- [工作原理](docs/ARCHITECTURE.md)
+- [常见问题](docs/TROUBLESHOOTING.md)
+- [贡献指南](CONTRIBUTING.md)
 
 ## 许可证
 
